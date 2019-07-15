@@ -1,0 +1,11 @@
+<p>
+  <button (click)="onMostrarOcultar()">Mostrar / Ocultar</button>
+</p>
+<ul *ngIf="mostrarOcultar">
+  <li *ngFor="let user of usersData">{{ user.name }}, {{ user.email }}: {{ user.phone }}
+  	&nbsp;<button (click)="guardarUsuario(user)">Guardar</button>
+  </li>
+</ul>
+<p>Buscar usuario en local storage</p>
+<input type="text" [(ngModel)]="userSearch">&nbsp;<button (click)="buscarUsuario()">Buscar</button>
+

@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<app-header [titulo]="tituloHeader" (loginClick)="onClick(event)"></app-header>
+<div class="sidebar">
+  <h3>Menu</h3>
+  <app-sidebar></app-sidebar>
+</div>
+<div id="main-content" class="content">
+    <router-outlet></router-outlet>
+</div>
+<div class="footer">
+  <app-footer></app-footer>
+</div>
+  

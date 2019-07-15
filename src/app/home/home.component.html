@@ -1,0 +1,7 @@
+<h1>
+  Contenido {{ nombreTitulo }}
+</h1>
+<input type="text" [(ngModel)]="nombreTitulo"
+  [ngClass]="{'textok': nombreTitulo.length>=3, 'texterror': nombreTitulo.length<3}" />
+<p>Longitud del texto: {{ nombreTitulo.length }}</p>
+<p *ngIf="urlParam">Esto vino por parametro: {{ urlParam }}</p>
